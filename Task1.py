@@ -9,14 +9,14 @@ def getIntersectionNode(headA, headB):
     pointerB = headB
     
     while pointerA != pointerB:
-        if ptrA:
-            ptrA = ptrA.next
+        if pointerA:
+            pointerA = pointerA.next
         else:
-            ptrA = headB
+            pointerA = headB
         
-        if ptrB:
-            ptrB = ptrB.next
+        if pointerB:
+            pointerB = pointerB.next
         else:
-            ptrB = headA
+            pointerB = headA
     
-    return ptrA
+    return pointerA
